@@ -28,10 +28,6 @@ repositories:
   - "https://github.com/kptdev/kpt-backstage-plugins"
   - "https://github.com/kptdev/krm-functions-sdk"
   - "https://github.com/kptdev/demo-repository"
-  - "https://github.com/kptdev/governance"
-  - "https://github.com/kptdev/.github"
-  - "https://github.com/kptdev/.project"
-
 
 website: "https://kpt.dev"
 
