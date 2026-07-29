@@ -1,65 +1,71 @@
 # .project metadata for kpt
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set slack_channels
 # TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "kpt"
 name: "kpt"
 description: "Automate Kubernetes Configuration Editing"
 type: "project"
-project_lead: "CsatariGergely" # TODO: AUTO-DETECTED — please verify
-# TODO: Set CNCF Slack channel(s)
-# slack_channels:
-#   - name: "#kpt"
-#     primary: true
+project_lead: "CsatariGergely" 
+
+slack_channels:
+   - name: "#kpt"
+     workspace: "kubernetes"
+     link: "https://kubernetes.slack.com/archives/C0155NSPJSZ"
+     primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2023-06-30T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/154" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/154"
 
 repositories:
   - "https://github.com/kptdev/kpt"
+  - "https://github.com/kptdev/porch"
+  - "https://github.com/kptdev/krm-functions-catalog"
+  - "https://github.com/kptdev/kpt-backstage-plugins"
+  - "https://github.com/kptdev/krm-functions-sdk"
+  - "https://github.com/kptdev/demo-repository"
 
 website: "https://kpt.dev"
 
-artwork: "https://landscape.cncf.io/logos/kpt.svg"
+artwork: "https://github.com/cncf/artwork/blob/main/projects/kpt/"
 
 # TODO: Add ADOPTERS.md if your project tracks adopters
 # adopters:
 #   path: "https://github.com/kptdev/kpt/blob/main/ADOPTERS.md"
 
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "kptdev/kpt"
+package_managers:
+    ghcr:
+      - "ghcr.io/kptdev/kpt"
 
 social:
-  twitter: "https://twitter.com/kptdev"
+  linkedin: "https://www.linkedin.com/company/cncf-kpt/"
 
-security:
-  policy:
-    path: "https://github.com/kptdev/kpt/blob/main/SECURITY.md"
-  contact:
-    advisory_url: "https://github.com/kptdev/kpt/security/advisories/new"
+#security:
+#  policy:
+#    path: "https://github.com/kptdev/kpt/blob/main/SECURITY.md"
+#  contact:
+#    advisory_url: "https://github.com/kptdev/kpt/security/advisories/new"
 
 governance:
   contributing:
     path: "https://github.com/kptdev/kpt/blob/main/CONTRIBUTING.md"
   code_of_conduct:
     path: "https://github.com/kptdev/kpt/blob/main/code-of-conduct.md"
+  governance_doc:
+    path: "https://github.com/kptdev/governance/blob/main/README.md"    
 
 legal:
   license:
     path: "https://github.com/kptdev/kpt/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
     dco_url:
       path: "https://developercertificate.org/"
+    has_cla: false
 
 documentation:
   readme:
